@@ -1,8 +1,8 @@
 # 🏨 Hotel Management System – WinForms (C#)
 
-**Author:** Hồ Duy Vũ  
-📧 **Email:** duyvu11092004@gmail.com  
-💻 **GitHub:** https://github.com/VUHODEV  
+- **Author**: Hồ Duy Vũ – Software Engineer | AI & Backend Developer
+- **GitHub**: https://github.com/Ho-Duy-Vu
+- **Email**: duyvu11092004@gmail.com
 📌 **Project Type:** Desktop Application  
 
 ---
