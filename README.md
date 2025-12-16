@@ -1,111 +1,158 @@
-Quản Lý Khách Sạn - WinForms
+# 🏨 Hotel Management System – WinForms (C#)
 
-Giới thiệu
+**Author:** Hồ Duy Vũ  
+📧 **Email:** duyvu11092004@gmail.com  
+💻 **GitHub:** https://github.com/VUHODEV  
+📌 **Project Type:** Desktop Application  
 
-Dự án Quản Lý Khách Sạn được phát triển bằng WinForms (C#) giúp quản lý thông tin khách sạn, bao gồm:
+---
 
-Quản lý phòng
+## 📌 Giới Thiệu
 
-Đặt phòng
+**Hotel Management System** là một ứng dụng quản lý khách sạn được phát triển bằng **C# WinForms**, nhằm hỗ trợ việc quản lý toàn diện các nghiệp vụ trong khách sạn như:
 
-Quản lý khách hàng
+- Quản lý phòng
+- Đặt phòng
+- Quản lý khách hàng
+- Quản lý nhân viên
+- Quản lý hóa đơn & thanh toán
 
-Quản lý nhân viên
+Dự án hướng tới việc **chuẩn hóa quy trình quản lý**, giảm sai sót thủ công và nâng cao hiệu quả vận hành khách sạn.
 
-Quản lý hóa đơn và thanh toán
+---
 
-Tính năng chính
+## 🎯 Mục Tiêu Dự Án
 
-🎯 Quản lý phòng
+- Số hóa toàn bộ quy trình quản lý khách sạn
+- Quản lý dữ liệu tập trung, chính xác
+- Tăng hiệu suất làm việc của nhân viên
+- Dễ sử dụng, phù hợp cho khách sạn vừa và nhỏ
+- Áp dụng kiến thức **C#, WinForms, SQL Server** vào bài toán thực tế
 
-Mục tiêu: Theo dõi thông tin phòng, trạng thái sử dụng, và tình trạng vệ sinh.
+---
 
-Quy trình:
+## ✨ Tính Năng Chính
 
-Nhập thông tin phòng: Loại phòng, giá phòng, số lượng giường.
+### 🛏️ Quản Lý Phòng
 
-Cập nhật trạng thái phòng: Check-in, Check-out.
+**Mục tiêu:**  
+Theo dõi thông tin phòng, trạng thái sử dụng và tình trạng vệ sinh.
 
-Tìm kiếm và liệt kê phòng theo tiêu chí: Loại phòng, giá tiền, trạng thái.
+**Chức năng:**
+- Thêm / sửa / xóa phòng
+- Quản lý thông tin:
+  - Loại phòng
+  - Giá phòng
+  - Số lượng giường
+- Cập nhật trạng thái:
+  - Trống
+  - Đã đặt
+  - Đang sử dụng (Check-in)
+  - Đã trả phòng (Check-out)
+- Tìm kiếm phòng theo:
+  - Loại phòng
+  - Giá tiền
+  - Trạng thái
 
-🏨 Quản lý đặt phòng
+---
 
-Mục tiêu: Quản lý các đơn đặt phòng từ khách hàng.
+### 🏨 Quản Lý Đặt Phòng
 
-Quy trình:
+**Mục tiêu:**  
+Quản lý các đơn đặt phòng của khách hàng một cách chính xác.
 
-Tiếp nhận yêu cầu đặt phòng: Thông tin khách hàng, số lượng phòng, thời gian đặt.
+**Chức năng:**
+- Tiếp nhận yêu cầu đặt phòng
+- Kiểm tra tình trạng phòng khả dụng
+- Lưu thông tin đặt phòng:
+  - Mã đặt phòng
+  - Thông tin khách hàng
+  - Thời gian nhận / trả phòng
+  - Tiền cọc
+- Tự động cập nhật trạng thái phòng từ **Trống → Đã đặt**
 
-Kiểm tra tình trạng phòng khả dụng.
+---
 
-Lập và lưu thông tin đặt phòng: Mã đặt phòng, thông tin khách hàng, thời gian nhận/trả phòng, tiền cọc.
+### 👤 Quản Lý Khách Hàng
 
-Cập nhật trạng thái phòng: Chuyển từ Trống sang Đã đặt.
+**Mục tiêu:**  
+Lưu trữ và quản lý thông tin khách hàng để hỗ trợ tốt hơn trong các lần giao dịch.
 
-👤 Quản lý khách hàng
+**Chức năng:**
+- Đăng ký thông tin khách hàng:
+  - Họ tên
+  - Số điện thoại
+  - Email
+  - Địa chỉ
+- Lưu lịch sử đặt phòng
+- Tra cứu khách hàng theo:
+  - Mã khách hàng
+  - Thông tin cá nhân
+- Hỗ trợ quản lý khách hàng thân thiết (mở rộng)
 
-Mục tiêu: Theo dõi thông tin khách hàng để hỗ trợ tốt hơn và lưu trữ lịch sử giao dịch.
+---
 
-Quy trình:
+### 👨‍💼 Quản Lý Nhân Viên
 
-Đăng ký thông tin khách hàng: Họ tên, số điện thoại, email, địa chỉ.
+**Mục tiêu:**  
+Quản lý nhân sự và kiểm soát quyền truy cập hệ thống.
 
-Quản lý hồ sơ khách hàng: Lưu lịch sử đặt phòng, điểm thưởng (nếu có chương trình khách hàng thân thiết).
+**Chức năng:**
+- Thêm / cập nhật / xóa nhân viên
+- Quản lý thông tin:
+  - Họ tên
+  - Số điện thoại
+  - Giới tính
+  - Email
+- Quản lý tài khoản đăng nhập
+- Phân quyền sử dụng hệ thống
 
-Tra cứu thông tin khách hàng: Tìm kiếm theo mã khách hàng hoặc thông tin cá nhân.
+---
 
-👨‍💼 Quản lý nhân viên
+### 🧾 Quản Lý Hóa Đơn & Thanh Toán
 
-Mục tiêu: Quản lý thông tin nhân viên để kiểm soát hệ thống.
+**Mục tiêu:**  
+Quản lý quá trình thanh toán và xuất hóa đơn cho khách hàng.
 
-Quy trình:
+**Chức năng:**
+- Tính tiền phòng theo thời gian lưu trú
+- Quản lý tiền cọc
+- Lập hóa đơn thanh toán
+- Lưu lịch sử giao dịch
 
-Thêm mới và cập nhật thông tin nhân viên: Họ tên, SĐT, giới tính, email.
+---
 
-Quản lý tài khoản nhân viên trong hệ thống.
+## 🔄 Tích Hợp Quy Trình
 
-🔄 Tích hợp quy trình
+Các phân hệ trong hệ thống được **liên kết chặt chẽ**:
 
-Các phân hệ trên liên kết chặt chẽ với nhau:
+- Trạng thái phòng tự động cập nhật từ module Đặt phòng
+- Hồ sơ khách hàng được tạo/cập nhật khi phát sinh giao dịch
+- Nhân viên đăng nhập hệ thống theo phân quyền được cấp
 
-Trạng thái phòng trong Quản lý Phòng được cập nhật tự động từ Quản lý Đặt phòng.
+---
 
-Hồ sơ khách hàng trong Quản lý Khách hàng được tạo hoặc cập nhật khi có giao dịch đặt phòng.
+## 🛠️ Công Nghệ Sử Dụng
 
-Nhân viên trong Quản lý Nhân viên có quyền sử dụng hệ thống theo phân quyền.
+| Thành phần | Công nghệ |
+|----------|----------|
+| Ngôn ngữ | C# |
+| Framework | WinForms |
+| Database | SQL Server |
+| UI | Windows Forms |
+| IDE | Visual Studio |
 
-Công nghệ sử dụng
+---
 
-Ngôn ngữ: C# (WinForms)
+## 📂 Cấu Trúc Dự Án (Tham Khảo)
 
-Cơ sở dữ liệu: SQL Server
-
-Giao diện: Windows Forms UI Framework
-
-Hướng dẫn cài đặt
-
-1️⃣ Clone repository
-
-git clone https://github.com/VUHODEV/WINFORM_QLKS.git
-cd WINFORM_QLKS
-
-2️⃣ Cấu hình cơ sở dữ liệu
-
-Import file database.sql vào SQL Server
-
-Cập nhật chuỗi kết nối trong app.config
-
-3️⃣ Chạy ứng dụng
-
-Mở project bằng Visual Studio
-
-Build & Run (F5)
-
-Đóng góp
-
-📌 Nếu bạn muốn đóng góp, hãy fork repo, tạo branch mới và gửi pull request.
-
-Liên hệ
-
-📩 Email: your_email@example.com
-💻 GitHub: github.com/VUHODEV
+```bash
+WINFORM_QLKS/
+│── DAL/            # Data Access Layer
+│── BLL/            # Business Logic Layer
+│── GUI/            # WinForms UI
+│── Models/         # Entity / Model classes
+│── Database/       # SQL scripts
+│── app.config
+│── Program.cs
+│── README.md
